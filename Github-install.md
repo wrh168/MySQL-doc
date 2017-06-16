@@ -1,29 +1,20 @@
-#Git的常用命令
-
-#查看
+# Git的常用命令
 
       git show # 显示某次提交的内容
-   
-#提交
-
+ 
       git add <file> # 将工作文件修改提交到本地暂存区
 
       git add . # 将所有修改过的工作文件提交暂存区
-#删除
 
       git rm <file> # 从版本库中删除文件
 
       git rm <file> --cached # 从版本库中删除文件，但不删除文件
 
-#查看提交记录
-
       git log git log <file> # 查看该文件每次提交记录
 
       git log -p <file> # 查看每次详细修改内容的diff
 
-#Git 本地分支管理
-
-#查看、切换、创建和删除分支
+# Git本地分支管理
 
       git br -r # 查看远程分支
 
@@ -35,7 +26,7 @@
 
       git br -d <branch> # 删除某个分支
 
-#Git暂存管理
+# Git暂存管理
 
       git stash # 暂存
 
@@ -45,7 +36,7 @@
 
       git stash drop # 删除暂存区
 
-#Git远程分支管理
+# Git远程分支管理
 
       git pull # 抓取远程仓库所有分支更新并合并到本地
 
@@ -63,7 +54,7 @@
 
       git push origin :<remote_branch> #先删除本地分支(git br -d <branch>)，然后再push删除远程分支
 
-#Git远程仓库管理
+# Git远程仓库管理
 
       git remote -v # 查看远程服务器地址和仓库名称
 
