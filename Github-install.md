@@ -1,18 +1,18 @@
 # Git的常用命令
 
-      git show # 显示某次提交的内容
+*git show # 显示某次提交的内容
  
-      git add <file> # 将工作文件修改提交到本地暂存区
+*git add <file> # 将工作文件修改提交到本地暂存区
 
-      git add . # 将所有修改过的工作文件提交暂存区
+*git add . # 将所有修改过的工作文件提交暂存区
 
-      git rm <file> # 从版本库中删除文件
+*git rm <file> # 从版本库中删除文件
 
-      git rm <file> --cached # 从版本库中删除文件，但不删除文件
+*git rm <file> --cached # 从版本库中删除文件，但不删除文件
 
-      git log git log <file> # 查看该文件每次提交记录
+*git log git log <file> # 查看该文件每次提交记录
 
-      git log -p <file> # 查看每次详细修改内容的diff
+*git log -p <file> # 查看每次详细修改内容的diff
 
 # Git本地分支管理
 
