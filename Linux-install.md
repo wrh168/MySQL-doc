@@ -4,18 +4,121 @@ Linux操作系统诞生于1991 年10 月5 日（这是第一次正式向外公�
 严格来讲，Linux这个词本身只表示Linux内核，但实际上人们已经习惯了用Linux来形容整个基于Linux内核，并且使用GNU 工程各种工具和数据库的操作系统。
 
 # Linux常用命令
-1. date ：print or set the system date and time
-2. stty -a: 可以查看或者打印控制字符(Ctrl-C, Ctrl-D, Ctrl-Z等)
-3. passwd: print or set the system date and time (用passwd -h查看)
-4. logout, login: 登录shell的登录和注销命令
-5. pwd: print or set the system date and time
-6. more, less, head tail: 显示或部分显示文件内容.
-7. lp/lpstat/cancel, lpr/lpq/lprm: 打印文件.
-8. 更改文件权限： chmod u+x...
-9. 删除非空目录：rm -fr dir
-10.拷贝目录： cp -R dir
 
-#Linux-Ubuntu安装
+1.ls命令
+
+         就是list的缩写，通过ls 命令不仅可以查看linux文件夹包含的文件，而且可以查看文件权限(包括目录、文件夹、文件权限)查看目录信息等等
+
+         常用参数搭配：
+
+         ls -a 列出目录所有文件，包含以.开始的隐藏文件
+
+         ls -r 反序排列
+
+         ls -t 以文件修改时间排序
+
+         ls -S 以文件大小排序
+
+         ls -h 以易读大小显示
+
+         ls -l 除了文件名之外，还将文件的权限、所有者、文件大小等信息详细列出来
+ 
+2、cd命令
+
+         (changeDirectory),命令语法：cd [目录名]。说明：切换当前目录至dirName
+
+         实例：
+
+         （1）进入要目录
+
+         cd /
+
+         （2）进入"家"目录
+
+         cd ~
+3、pwd命令
+
+         查看当前工作目录路径
+
+         实例：
+
+         （1）查看当前路径
+
+         pwd
+
+         （2）查看软链接的实际路径
+
+         pwd -P
+4、mkdir命令
+
+         创建文件夹
+
+         可用选项：
+
+         -m: 对新建目录设置存取权限,也可以用chmod命令设置;
+
+         -p: 可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不在的目录,即一次可以建立多个目录;
+
+         实例：
+
+         （1）当前工作目录下创建名为t的文件夹
+
+         mkdir t
+
+         （2）在tmp目录下创建路径为test/t1/t的目录，若不存在，则创建
+
+         mkdir -p /tmp/test/t1/t
+5、rm命令
+
+         删除一个目录中的一个或多个文件或目录，如果没有使用- r选项，则rm不会删除目录。如果使用rm 来删除文件，通常仍可以将该文件恢复原状
+
+         实例：
+
+         （1）删除任何.log文件；删除前逐一询问确认
+
+         rm -i *.log
+
+         （2）删除test子目录及子目录中所有档案删除,并且不用一一确认
+
+         rm -rf test
+
+         （3）删除以-f开头的文件
+
+         rm -- -f*
+6、mv命令
+
+         移动文件或修改文件名，根据第二参数类型（如目录，则移动文件；如为文件则重命令该文件）。      
+         
+         实例：
+
+         （1）将文件test.log重命名为test1.txt
+
+         mv test.log test1.txt
+
+         （2）将文件log1.txt,log2.txt,log3.txt移动到根的test3目录中
+
+         mv llog1.txt log2.txt log3.txt /test3
+
+         （3）将文件file1改名为file2，如果file2已经存在，则询问是否覆盖
+
+         mv -i log1.txt log2.txt
+
+         （4）移动当前文件夹下的所有文件到上一级目录
+
+         mv * ../
+7、cp命令
+
+         将源文件复制至目标文件，或将多个源文件复制至目标目录。
+
+         注意：命令行复制，如果目标文件已经存在会提示是否覆盖，而在shell脚本中，如果不加-i参数，则不会提示，而是直接覆盖！
+
+         -i 提示
+
+         -r 复制目录及目录内所有项目
+
+         -a 复制的文件与原文件时间一样
+
+# Linux-Ubuntu安装
 1.工具
 Linux-Ubuntu系统和虚拟机
 2.步骤
