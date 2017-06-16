@@ -7,7 +7,7 @@
 
     查找以前是否安装有mysql，使用下面命令：
 
-    rpm -qa|grep -i mysql
+    ``` rpm -qa|grep -i mysql
 
     如果显示有如下包则说明已安装mysql
     
