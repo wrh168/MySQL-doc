@@ -6,7 +6,7 @@
    
         1.建立STU数据库
 	
-        2.建立information,class,course,school,score
+        2.建立information,course,school,score
    
    * 下午
    
@@ -50,6 +50,19 @@
 	
             localhost
         
+#### 2017-6-20  星期一
+    
+   * 上午
+   
+   	1.将创建好的数据库表与网页进行连接
+	
+	2.通过调试实现学生信息管理系统的增删改查
+	
+    * 下午
+    
+    	1.写课程设计实验报告
+	2.在进一步增加多页面的功能，还在进一步调试中
+	
    
 
     
