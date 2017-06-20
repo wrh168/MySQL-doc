@@ -42,11 +42,11 @@
 	 
         4.设置Makefile
 	
-       	 vim Makefile
+       	 	vim Makefile
 	 
-       	 install:
+       		 install:
 	 
-	        cp *.cgi /usr/lib/cgi-bin/sx
+	       		 cp *.cgi /usr/lib/cgi-bin/sx
 		
         5.连接到网页
 	
