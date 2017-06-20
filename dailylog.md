@@ -3,11 +3,13 @@
 #### 2017-6-16  星期五
     
    * 上午
+   
         1.建立STU数据库
 	
         2.建立information,class,course,school,score
    
    * 下午
+   
         1.数据库表信息的增删改查
    
     
@@ -17,6 +19,7 @@
 #### 2017-6-19  星期一
     
    * 上午
+   
         1.安装atom
 	
         2.配置atom
@@ -28,6 +31,7 @@
     
     
     * 下午
+    
         1.安装Apache
 	
         2.Apache开启CGI
