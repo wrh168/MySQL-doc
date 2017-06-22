@@ -88,6 +88,7 @@
     
 * 创建后提交
 
+```linux
      im README
      git status
      git add README
@@ -95,18 +96,27 @@
      git config 用户名
      git config 密码
      git commit
+```
      
 * 添加远程仓库
 
+```linux
      git remote add origin  地址
+```
      
 * 本地提交
 
+```linux
      git push origin master
      git push origin branch-name
      
+```
+     
  * 更新
  
+ ```linux
      git pull origin master
+     
+```
    
 
