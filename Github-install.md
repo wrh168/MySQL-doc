@@ -64,3 +64,48 @@
 
 * git push -u origin master # 客户端首次提交
 
+
+# GitHub安装
+
+* 首先判断GIT是否安装
+
+     git
+    
+* 若没有则输入命令进行安装
+
+     sudo apt-git install git
+     
+
+# Git配置
+
+* 创建本地文件
+
+     mkdir wrh
+     cd wrh
+     git init
+    
+    
+* 创建后提交
+
+     im README
+     git status
+     git add README
+     git commit
+     git config 用户名
+     git config 密码
+     git commit
+     
+* 添加远程仓库
+
+     git remote add origin  地址
+     
+* 本地提交
+
+     git push origin master
+     git push origin branch-name
+     
+ * 更新
+ 
+     git pull origin master
+   
+
