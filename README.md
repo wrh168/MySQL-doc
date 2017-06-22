@@ -1,8 +1,8 @@
 # 技术文档
 
-* [技术文档](./Github-install.md)
-* [技术文档](./Linux-install.md)
-* [技术文档](./MySQL-install.md)
+* [GIT](./Github-install.md)
+* [LINUX](./Linux-install.md)
+* [MYSQL](./MySQL-install.md)
 
 # 课程设计
 
