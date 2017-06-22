@@ -74,7 +74,7 @@ int cgiMain()
 
 	//fprintf(cgiOut, "name = %s, age = %s, stuId = %s\n", name, age, stuId);
 
-	int ret;
+	//int ret;
 	char sql[128] = "\0";
 	MYSQL *db;
 

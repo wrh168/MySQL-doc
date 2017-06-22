@@ -60,7 +60,7 @@ int cgiMain()
 	}
 
 
-	sprintf(sql, "update course set course_enable = 0 where courseNo = '%s'", courseNo);
+	sprintf(sql, "update course set course_enable = 1 where courseNo = '%s'", courseNo);
 	if ((ret = mysql_real_query(db, sql, strlen(sql) + 1)) != 0)
 	{
 		fprintf(cgiOut,"mysql_real_query fail:%s\n", mysql_error(db));
@@ -70,7 +70,7 @@ int cgiMain()
 
 
 	//fprintf(cgiOut, "delete stu ok!\n");
-	fprintf(cgiOut, "<p style='margin-left:20px;'>delete course ok!</p>");
+	fprintf(cgiOut, "<p style='margin-left:20px;'>reset course ok!</p>");
 	fprintf(cgiOut, "<input type='button' name='button1' id='button1' value='返回' onclick='history.go(-1)'  class='btn btn-default'>");
 	mysql_close(db);
 

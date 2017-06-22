@@ -60,7 +60,7 @@ int cgiMain()
 	}
 
 
-	sprintf(sql, "delete from school where school_id = '%s'", school_id);
+	sprintf(sql, "update school set school_enable = 0 where school_id = '%s'", school_id);
 	if ((ret = mysql_real_query(db, sql, strlen(sql) + 1)) != 0)
 	{
 		fprintf(cgiOut,"mysql_real_query fail:%s\n", mysql_error(db));

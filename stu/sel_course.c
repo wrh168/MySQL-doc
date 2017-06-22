@@ -53,11 +53,11 @@ int cgiMain()
 
 	if (courseNo[0] == '*')
 	{
-		sprintf(sql, "select * from course");
+		sprintf(sql, "select courseNo as '课程号',courseName as '课程名称',creditHour as '学分' from course where course_enable = 1");
 	}
 	else
 	{
-		sprintf(sql, "select * from  course where courseNo = '%s'", courseNo);
+		sprintf(sql, "select courseNo as '课程号',courseName as '课程名称',creditHour as '学分' from  course where courseNo = '%s' and course_enable = 1", courseNo);
 	}
 
 

@@ -53,11 +53,11 @@ int cgiMain()
 
 	if (studentNo[0] == '*')
 	{
-		sprintf(sql, "select studentNo as	'学号',studentName as	'姓名',sex as	'性别',birthday as '生日' from information");
+		sprintf(sql, "select studentNo as	'学号',studentName as	'姓名',sex as	'性别',birthday as '生日',school_id as '学校' from information where stu_enable = 1");
 	}
 	else
 	{
-		sprintf(sql, "select studentNo as	'学号',studentName as	'姓名',sex as	'性别',birthday as '生日' from  information where studentNo = '%s'", studentNo);
+		sprintf(sql, "select studentNo as	'学号',studentName as	'姓名',sex as	'性别',birthday as '生日',school_id as '学校' from  information where studentNo = '%s' and stu_enable = 1", studentNo);
 	}
 
 

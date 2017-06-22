@@ -45,22 +45,25 @@
     <h1 class="header text-center">全国大学生信息管理系统</h1>
     <div class="container">
         <div class="operation row">
-            <div class="text-center col-md-3 col-sm-6">
+            <div style="margin-left:80px;" class="text-center col-md-2 col-sm-4">
                 <button>添加课程信息</button>
             </div>
-            <div class="text-center col-md-3 col-sm-6">
+            <div class="text-center col-md-2 col-sm-4">
                 <button>查询课程信息</button>
             </div>
-            <div class="text-center col-md-3 col-sm-6">
+            <div class="text-center col-md-2 col-sm-4">
                 <button>修改课程信息</button>
             </div>
-            <div class="text-center col-md-3 col-sm-6">
+            <div class="text-center col-md-2 col-sm-4">
                 <button>删除课程信息</button>
             </div>
-            <div class="text-center col-md-3 col-sm-6">
+            <div class="text-center col-md-2 col-sm-4">
+                <button>还原课程信息</button>
+            </div>
+            <div style="margin-left:80px;" class="text-center col-md-2 col-sm-4">
                 <a href="./index_school.html" type="button">链接到学校</a>
             </div>
-            <div class="text-center col-md-3 col-sm-6">
+            <div class="text-center col-md-2 col-sm-4">
                 <a href="./index.html" type="button">链接到学生</a>
             </div>
         </div>
@@ -154,7 +157,21 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-success">提交</button>
+                        <button type="submit" class="btn btn-success">删除</button>
+                        <button type="reset" class="btn btn-success">重置</button>
+                    </div>
+                </form>
+            </li>
+            <li>
+                <form class="form-horizontal" method="get" action="/cgi-bin/sx/reset_course.cgi">
+                    <div class="form-group">
+                        <label for="courseNo-del" class="col-sm-2 control-label">输入要还原的课程号</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="courseNo" class="form-control" id="courseNo-del" placeholder="输入课程号">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">还原</button>
                         <button type="reset" class="btn btn-success">重置</button>
                     </div>
                 </form>

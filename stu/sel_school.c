@@ -53,11 +53,11 @@ int cgiMain()
 
 	if (school_id[0] == '*')
 	{
-		sprintf(sql, "select * from school");
+		sprintf(sql, "select school_id as '学校id',school_name as '学校名称',school_addr as '学校地址',school_tel as '联系方式' from school where school_enable = 1");
 	}
 	else
 	{
-		sprintf(sql, "select * from  school where school_id = '%s'", school_id);
+		sprintf(sql, "select school_id as '学校id',school_name as '学校名称',school_addr as '学校地址',school_tel as '联系方式' from  school where school_id = '%s' and school_enable = 1", school_id);
 	}
 
 

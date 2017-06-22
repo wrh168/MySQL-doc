@@ -11,14 +11,14 @@ int cgiMain()
 
 	fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
 
-	char courseNo[10] = "\0";
+	char school_id[10] = "\0";
 	int status = 0;
 
 
-	status = cgiFormString("courseNo",  courseNo, 10);
+	status = cgiFormString("school_id",  school_id, 32);
 	if (status != cgiFormSuccess)
 	{
-		fprintf(cgiOut, "get courseNo error!\n");
+		fprintf(cgiOut, "get school_id error!\n");
 		return 1;
 	}
 
@@ -60,7 +60,7 @@ int cgiMain()
 	}
 
 
-	sprintf(sql, "update course set course_enable = 0 where courseNo = '%s'", courseNo);
+	sprintf(sql, "update school set school_enable = 1 where school_id = '%s'", school_id);
 	if ((ret = mysql_real_query(db, sql, strlen(sql) + 1)) != 0)
 	{
 		fprintf(cgiOut,"mysql_real_query fail:%s\n", mysql_error(db));
@@ -70,7 +70,7 @@ int cgiMain()
 
 
 	//fprintf(cgiOut, "delete stu ok!\n");
-	fprintf(cgiOut, "<p style='margin-left:20px;'>delete course ok!</p>");
+	fprintf(cgiOut, "<p style='margin-left:20px;'>reset school ok!</p>");
 	fprintf(cgiOut, "<input type='button' name='button1' id='button1' value='返回' onclick='history.go(-1)'  class='btn btn-default'>");
 	mysql_close(db);
 

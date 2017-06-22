@@ -1,7 +1,7 @@
 CC=gcc
 AFLAGS=-Wall -g
 LDFLAGS= -lmysqlclient
-OBJS= add.cgi del.cgi mod.cgi sel.cgi add_school.cgi sel_school.cgi	mod_school.cgi del_school.cgi add_course.cgi	sel_course.cgi	mod_course.cgi	del_course.cgi
+OBJS= add.cgi del.cgi mod.cgi sel.cgi add_school.cgi sel_school.cgi	mod_school.cgi del_school.cgi add_course.cgi	sel_course.cgi	mod_course.cgi	del_course.cgi reset.cgi reset_school.cgi reset_course.cgi
 
 all:$(OBJS)
 
