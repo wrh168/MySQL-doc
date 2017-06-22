@@ -13,10 +13,7 @@
         1.数据库表信息的增删改查
 	
    
-    
-    
-    
-    
+        
 #### 2017-6-19  星期一
     
    * 上午
@@ -38,18 +35,21 @@
 	
         3.修改目录权限
 	
-        	 sudo mkdir /usr/lib/cgi-bin/sx
-         	 sudo chmod 777 /usr/lib/cgi-bin/sx
-	 
+```linux
+        sudo mkdir /usr/lib/cgi-bin/sx
+        sudo chmod 777 /usr/lib/cgi-bin/sx
+```	 
         4.设置Makefile
-	
-       	 	vim Makefile
-       		install:	 
+
+```linux
+	vim Makefile
+       	install:	 
 	       	cp *.cgi /usr/lib/cgi-bin/sx
-		
+```		
         5.连接到网页
-	
+```linux
            localhost
+```
         
 #### 2017-6-20  星期二
     
@@ -68,19 +68,17 @@
 	2.进一步增加多页面功能
 	
 	
-	
-	
-	
+		
 #### 2017-6-21  星期三
 
 	
    * 上午
      
-   	1.代码调试中～
+   	1.页面与数据库连接出现错误，进行代码调试
 	
    * 下午
    
-   	1.代码调试中～
+   	1.在页面或本地对代码、文件进行修改一定要及时上传，否则会出现更新不同步的问题
 	
 #### 2017-6-22 星期四
 
@@ -90,14 +88,13 @@
    
    	1.增加了假删除和还原效果
 	
-	2.继续完善程序
+	2.关联四个表，实现彼此的连接和调用
 	
 	
    *  下午
     
-    	1.完成文档
-    
-    
+    	1.完善文档中~
+    
     
     
 
