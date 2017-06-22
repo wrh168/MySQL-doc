@@ -39,14 +39,18 @@
         sudo mkdir /usr/lib/cgi-bin/sx
         sudo chmod 777 /usr/lib/cgi-bin/sx
 ```	 
-        4.设置Makefile
+
+
+4.设置Makefile
 
 ```linux
 	vim Makefile
        	install:	 
 	       	cp *.cgi /usr/lib/cgi-bin/sx
-```		
-        5.连接到网页
+```	
+
+5.连接到网页
+	
 ```linux
            localhost
 ```
@@ -55,8 +59,7 @@
     
   * 上午
    
-   	
-	1.将创建好的数据库表与网页进行连接
+   	1.将创建好的数据库表与网页进行连接
 	
 	2.通过调试实现学生信息管理系统的增删改查
 	
@@ -85,10 +88,9 @@
 
    * 上午
    
-   
-   	1.增加了假删除和还原效果
+   1.增加了假删除和还原效果
 	
-	2.关联四个表，实现彼此的连接和调用
+   2.关联四个表，实现彼此的连接和调用
 	
 	
    *  下午
