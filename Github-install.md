@@ -80,10 +80,11 @@
 
 * 创建本地文件
 
+```linux     
      mkdir wrh
      cd wrh
      git init
-    
+```    
     
 * 创建后提交
 
